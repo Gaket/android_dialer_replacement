@@ -1,15 +1,13 @@
 package com.mbarrben.dialer
 
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
-import com.mbarrben.dialer.R.id.buttonAnswer
-import com.mbarrben.dialer.R.id.buttonHangup
-import com.mbarrben.dialer.R.id.textDisplayName
-import com.mbarrben.dialer.R.id.textDuration
-import com.mbarrben.dialer.R.id.textStatus
 import io.reactivex.Observable
+import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposables
+import kotlinx.android.synthetic.main.activity_call.*
 import java.util.concurrent.TimeUnit
 
 class CallActivity : AppCompatActivity() {
